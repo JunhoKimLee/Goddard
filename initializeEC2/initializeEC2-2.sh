@@ -7,12 +7,12 @@ echo "Installing GDAL."
 conda install gdal
 
 echo "Downloading some of Junho's useful scripts..."
+wget https://github.com/JunhoKimLee/Goddard/archive/master.zip
+unzip master.zip
 echo "Downloading isRunning.sh - A script that will tell you if a script is running in the background."
-wget https://github.com/JunhoKimLee/Goddard/blob/master/isRunning.sh
 echo "Downloading isShutdown.sh - A script that will tell you if a shutdown has been scheduled."
-wget https://github.com/JunhoKimLee/Goddard/blob/master/isShutdown.sh
 echo "Downloading scheduledShutdown.sh - A script that will let you schedule a future shutdown."
-wget https://github.com/JunhoKimLee/Goddard/blob/master/scheduledShutdown.sh
+mv -r Goddard-master Useful_Scripts
 
 echo "Organizing some stuff..."
 mkdir Useful_Scripts
