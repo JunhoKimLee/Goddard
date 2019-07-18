@@ -12,13 +12,8 @@ unzip master.zip
 echo "Downloading isRunning.sh - A script that will tell you if a script is running in the background."
 echo "Downloading isShutdown.sh - A script that will tell you if a shutdown has been scheduled."
 echo "Downloading scheduledShutdown.sh - A script that will let you schedule a future shutdown."
-mv -r Goddard-master Useful_Scripts
-
-echo "Organizing some stuff..."
-mkdir Useful_Scripts
-mv isRunning.sh Useful_Scripts/isRunning.sh
-mv isShutdown.sh Useful_Scripts/isShutdown.sh
-mv scheduledShutdown.sh Useful_Scripts/scheduledShutdown.sh
+mv Goddard-master Useful_Scripts
+rm master.zip
 
 echo "Installing nfs-utils."
 sudo yum install -y nfs-utils
