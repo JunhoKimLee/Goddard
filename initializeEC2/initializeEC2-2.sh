@@ -12,6 +12,7 @@ unzip master.zip
 echo "Downloading isRunning.sh - A script that will tell you if a script is running in the background."
 echo "Downloading isShutdown.sh - A script that will tell you if a shutdown has been scheduled."
 echo "Downloading scheduledShutdown.sh - A script that will let you schedule a future shutdown."
+echo "Downloading idleShutdown.sh - A script to be run on schedule that checks if a script is running and if not, shuts down the machine."
 mv Goddard-master Useful_Scripts
 rm master.zip
 
