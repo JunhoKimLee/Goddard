@@ -16,6 +16,9 @@ echo "Downloading idleShutdown.sh - A script to be run on schedule that checks i
 mv Goddard-master Useful_Scripts
 rm master.zip
 
+echo "Making scripts executable..."
+sudo chmod 777 Useful_Scripts
+
 echo "Installing nfs-utils."
 sudo yum install -y nfs-utils
 
