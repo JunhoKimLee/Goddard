@@ -4,7 +4,7 @@ conda update --all
 conda --version
 
 echo "Installing GDAL."
-conda install gdal
+yes | conda install gdal
 
 echo "Downloading some of Junho's useful scripts..."
 wget https://github.com/JunhoKimLee/Goddard/archive/master.zip
