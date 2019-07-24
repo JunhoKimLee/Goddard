@@ -13,6 +13,7 @@ else; then
   install_gdal
 fi
 }
+install_gdal
 
 echo "Downloading some of Junho's useful scripts..."
 wget https://github.com/JunhoKimLee/Goddard/archive/master.zip
