@@ -6,7 +6,7 @@ sudo crontab -l -u root | echo "* 18 * * 5 /sbin/shutdown -h now" | sudo crontab
 echo "But now there is!"
 
 echo "Installing wget, zip, unzip, file, bzip2, nano."
-sudo yum install wget zip unzip file bzip2 nano
+yes | sudo yum install wget zip unzip file bzip2 nano
 
 echo "Downloading Anaconda."
 wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
