@@ -8,7 +8,7 @@ function install_gdal {
 timeout 60 yes | conda install gdal
 if [[ -f "/home/ec2-user/yes/bin/gdalinfo" ]]; then
   echo "GDAL exists."
-else; then
+else
   echo "GDAL not installed. Retrying..."
   install_gdal
 fi
