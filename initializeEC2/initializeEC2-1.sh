@@ -12,7 +12,7 @@ echo "Downloading Anaconda."
 wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
 
 echo "Installing Anaconda."
-yes | bash Anaconda3-2019.03-Linux-x86_64.sh
+echo "yes" | bash Anaconda3-2019.03-Linux-x86_64.sh
 rm Anaconda3-2019.03-Linux-x86_64.sh
 
 echo "Success! Anaconda installed."
