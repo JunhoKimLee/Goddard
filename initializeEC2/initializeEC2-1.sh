@@ -9,7 +9,7 @@ echo "Installing wget, zip, unzip, file, bzip2, nano."
 sudo yum install wget zip unzip file bzip2 nano
 
 echo "Downloading Anaconda."
-wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+echo "yes" | wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
 
 echo "Installing Anaconda."
 bash Anaconda3-2019.03-Linux-x86_64.sh
