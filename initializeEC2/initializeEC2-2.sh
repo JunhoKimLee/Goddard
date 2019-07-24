@@ -1,7 +1,7 @@
-echo "Updating Anaconda to latest version."
-conda update -n root conda
-conda update --all
-conda --version
+#echo "Updating Anaconda to latest version."
+#conda update -n root conda
+#conda update --all
+#conda --version
 
 echo "Installing GDAL."
 sleep 5
