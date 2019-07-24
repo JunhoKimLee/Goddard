@@ -14,7 +14,7 @@ wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
 echo "Installing Anaconda."
 yes "yes" | bash Anaconda3-2019.03-Linux-x86_64.sh
 rm Anaconda3-2019.03-Linux-x86_64.sh
-mv yes anaconda3
+#mv yes anaconda3
 
 echo "Success! Anaconda installed."
 echo "Close and reopen this terminal window for changes to take effect. Then execute the second installer."
