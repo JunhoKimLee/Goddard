@@ -4,7 +4,15 @@ conda update --all
 conda --version
 
 echo "Installing GDAL."
-yes | conda install gdal
+function install_gdal {
+timeout 60 yes | conda install gdal
+if [[ -f "/home/ec2-user/yes/bin/gdalinfo" ]]; then
+  echo "GDAL exists."
+else; then
+  echo "GDAL not installed. Retrying..."
+  install_gdal
+fi
+}
 
 echo "Downloading some of Junho's useful scripts..."
 wget https://github.com/JunhoKimLee/Goddard/archive/master.zip
